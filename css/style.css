@@ -2773,3 +2773,42 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #313131;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 62%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #313131 transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 1px;
+  text-align: center;
+  border-top: rgba(27, 27, 27, 0.8) .1em solid;
+}
+
+.dropdown-content {
+  right: 0;
+}
