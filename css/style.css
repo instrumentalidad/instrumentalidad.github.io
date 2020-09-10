@@ -52,7 +52,7 @@ body {
   color: #777777; }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #ffffff; }
 h2,
@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #222222; }
 
@@ -140,8 +140,19 @@ button:focus {
       .main_title h2 {
         font-size: 30px; } }
   .main_title p {
+    text-align: left;
+    padding: 20px 0px 0px; 
     margin-bottom: 0px;
-    max-width: 570px;
+    max-width: 1070px;
+    font-size: 17px;
+    color: #000;
+    margin: auto; }
+ .main_title h3 {
+    text-align: left;
+    padding: 50px 0px 0px; 
+    margin-bottom: 0px;
+    max-width: 1070px;
+    color: #000;
     margin: auto; }
   .main_title.white h2 {
     color: #fff; }
@@ -380,7 +391,8 @@ button:focus {
     text-align: center; } }
 .about_area .about_content h2 {
   font-size: 36px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px; 
+  text-align: center; }
   @media (max-width: 767px) {
     .about_area .about_content h2 {
       font-size: 25px; } }
@@ -403,7 +415,6 @@ button:focus {
   padding: 110px 60px;
   background: #ffffff;
   margin-top: 70px;
-  margin-left: -40px;
   z-index: 2;
   box-shadow: 0px 5px 40px rgba(153, 153, 153, 0.2); }
   @media (max-width: 1199px) {
@@ -413,16 +424,24 @@ button:focus {
     .about_area .about_right {
       margin-left: 0;
       margin-top: 20px; } }
+  .about_area p {
+  text-align: left;
+  padding: 20px 0px 0px; 
+  margin-bottom: 0px;
+  max-width: 1070px;
+  font-size: 17px;
+  color: #000;
+  margin: auto; }
 
 /* End About Us Area css
 ============================================================================================ */
 /* Start Causes Area css
 ============================================================================================ */
 .causes_area {
-  padding: 130px 0px 100px; }
+  padding: 110px 0px 0px; }
   @media (max-width: 991px) {
     .causes_area {
-      padding: 70px 0px 40px; } }
+      padding: 70px 0px 0px; } }
 
 .single_causes {
   padding: 50px;
@@ -450,7 +469,7 @@ button:focus {
 /* Our Major Cause Area css
 ============================================================================================ */
 .features_causes {
-  padding: 130px 0px 100px; }
+  padding: 40px 0px 100px; }
   @media (max-width: 991px) {
     .features_causes {
       padding-bottom: 40px; } }
@@ -2811,4 +2830,44 @@ h6 {
 
 .dropdown-content {
   right: 0;
+}
+
+/* sidenav for reading page */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: rea;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
