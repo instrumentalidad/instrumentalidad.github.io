@@ -503,6 +503,7 @@ button:focus {
       .features_causes .card .raised_goal span {
         color: #60bc0f; }
     .features_causes .card .donation .primary_btn {
+      margin-top: 25px;
       line-height: 34px;
       padding: 0 20px; }
     .features_causes .card .donation span {
